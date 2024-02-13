@@ -1,5 +1,6 @@
 import { Likes } from "./Like.jsx";
 import { useState } from 'react'
+import StarRating from "./Fav.jsx";
 const coursesData = [
     {
         "name": "in name",
@@ -51,6 +52,7 @@ const Course = ({ course }) => {
                     <button className={"but"} onClick={() => setFavs((favs) => favs + 1)}>
                         Favorite {favs}
                     </button>
+                    <StarRating/>
                 </div>
             </div>
         );
